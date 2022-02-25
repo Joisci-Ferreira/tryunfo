@@ -3,10 +3,18 @@ import PropTypes from 'prop-types';
 
 class Form extends React.Component {
   render() {
-    const { cardName, cardDescription, cardAttr1, cardAttr2, cardAttr3,
-      cardImage, cardRare, cardTrunfo, onInputChange } = this.props;
-
-    const { isSaveButtonDisabled, onSaveButtonClick } = this.props;
+    const { cardName,
+      cardDescription,
+      cardAttr1,
+      cardAttr2,
+      cardAttr3,
+      cardImage,
+      cardRare,
+      cardTrunfo,
+      onInputChange,
+      isSaveButtonDisabled,
+      onSaveButtonClick,
+    } = this.props;
 
     return (
       <form>
@@ -111,6 +119,7 @@ class Form extends React.Component {
         <button
           type="button"
           data-testid="save-button"
+          name="button"
           disabled={ isSaveButtonDisabled }
           onClick={ onSaveButtonClick }
         >
