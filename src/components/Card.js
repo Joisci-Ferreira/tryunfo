@@ -27,6 +27,7 @@ class Card extends React.Component {
             <p>Super Trunfo</p>
           </div>
         ) : ''}
+
       </div>
     );
   }
