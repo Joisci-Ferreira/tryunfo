@@ -1,7 +1,6 @@
 import React from 'react';
 import Form from './components/Form';
 import Card from './components/Card';
-// import Delete from './components/Delete';
 
 class App extends React.Component {
   constructor() {
@@ -144,7 +143,6 @@ class App extends React.Component {
           isSaveButtonDisabled={ isSaveButtonDisabled }
           onInputChange={ this.onInputChange }
           onSaveButtonClick={ this.onSaveButtonClick }
-
         />
         <Card
           cardName={ cardName }
